@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Form User Manual</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header img {
+            width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        section h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="smaja.jpg" alt="SMAJA Logo">
+        <h1>Registration Form User Manual</h1>
+    </header>
+
+    <nav>
+        <a href="userManual.html">User Manual</a>
+        <a href="registration.php">Registration</a>
+        <a href="about.php">About Us</a>
+        <a href="faqs.php">FAQs</a>
+        <a href="userLogout.php">Log Out</a>
+    </nav>
+
+
+<div class="container">
+    <section id="personal-info">
+        <h2 onclick="toggleSection('personal-info')">1. Personal Information</h2>
+        <p>Enter your full name in the "Name" field. <b>Example: Won Bin</b></p>
+        <p>Enter your IC number in the "IC Number" field. Example: 123456-78-9101</p>
+        <p>Select your gender using the radio buttons given.</p>
+        <p>Enter your date of birth in the "Date of Birth" field. Example: 2000-01-01</p>
+    </section>
+
+    <section id="education-background">
+        <h2 onclick="toggleSection('education-background')">2. Education Background</h2>
+        <p>Select your gender using the radio buttons given.</p>
+        <p>Enter your date of birth in the "Date of Birth" field. Example: 2000-01-01</p>
+        <p>Enter your ethnicity and religion in the respective fields.</p>
+        <p>If you have OKU status, enter the status and OKU card number.</p>
+    </section>
+
+    <section id="subject-selection">
+        <h2 onclick="toggleSection('subject-selection')">3. Subject Selection</h2>
+        <p>Select the subjects you want to register for by checking the corresponding checkboxes.</p>
+        <p>Compulsory Subjects: Select at least one compulsory subject.</p>
+        <p>Elective Subjects: Select optional elective subjects based on your preferences.</p>
+    </section>
+</div>
+
+    <footer>
+        &copy; 2024 SMAJA SPM Online Registration
+    </footer>
+
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === "none") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
